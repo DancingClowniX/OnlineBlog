@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h2>Ваша текущая новость</h2>
+    <p>{{ id }} : {{ text }}</p>
+</div>
+<h2>Отредактировать</h2>
+<form action="/post/edit_news/{{ id }}/" method="POST">
+    {% csrf_token %}
+    <textarea name="news"></textarea>
+    <div>
+    <input type="submit" value="отправить" style="background-color: aqua">
+    </div>
+</form>
+</body>
+</html>

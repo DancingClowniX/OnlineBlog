@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: darkolivegreen;
+    color: white;
+    width: 100%;
+    opacity: 1;
+}
+
+#news_string{
+  font-family: "Gabriela", serif;
+  font-weight: 400;
+  font-style: normal;
+    color: white;
+    opacity: 1;
+}
+#wrapp{
+    background: black;
+    opacity: .9;
+}
+body{display: grid;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../img/wood.jpg');
+    background-repeat: repeat-y;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    flex-direction: column;
+}
+body::-webkit-scrollbar{
+    background: #d4d4d4;
+    box-shadow: 0 0 2px rgba(0,0,0,2) inset;
+}
+body::-webkit-scrollbar-track{
+    background: #d4d4d4;
+    box-shadow: 0 0 2px rgba(0,0,0,2) inset;
+}
+body::-webkit-scrollbar-thumb{
+    background: #939393;
+    border: 3px solid #d4d4d4;
+    border-radius:  8px ;
+}
+.news_action{
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+html{
+    height: 100%;
+}
+.items_news {
+    max-width: 300px;
+    width: auto;
+    background-color: rgba(57, 49, 43, 0.5);
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+#modalBlock{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.modalBox{
+    background-color: darkolivegreen;
+    z-index: 1;
+    padding: 45px;
+    max-width: 500px;
+    margin: 30px 15px;
+
+}
+#modalBlock.open{
+    visibility: visible;
+    opacity: 1;
+    transition:all;
+}
+.form{
+    position: center;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
